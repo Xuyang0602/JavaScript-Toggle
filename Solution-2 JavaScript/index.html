@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello Plunker!</h1>
+    <div onclick="return clickFunction('content_1')">Click Me</div>
+    <ul id="content_1" style="display: none">
+      <li>item_1</li>
+    </ul>
+    
+    <script>
+      function clickFunction(divDisplay) {
+        if(document.getElementById(divDisplay).style.display != "block") {
+          document.getElementById(divDisplay).style.display = "block";
+        } else {
+          document.getElementById(divDisplay).style.display = "none";
+        }
+      }
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Hello Plunker!</h1>
+    <div class="container">Container</div>
+    <ul style="display: none;">
+      <li>Item1</li>
+    </ul>
+    
+    <script>
+      $(function(){
+        $(".container").toggle(function() {
+          $(this).next("ul").show();
+        },function(){
+          $(this).next("ul").hide();
+        });
+      });
+    </script>
+  </body>
+
+</html>
